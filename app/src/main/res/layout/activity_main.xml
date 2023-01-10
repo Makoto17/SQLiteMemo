@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:gravity="left"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="キー"
+        />
+
+    <EditText
+        android:id="@+id/EditKey"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本文"/>
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.93"
+        android:gravity="top"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/KeyRead"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="functionKeyRead"
+                android:text="読む"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/KeyWrite"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="functionKeyWrite"
+                android:text="保存"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/KeyClear"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="functionKeyClear"
+                android:text="クリア"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/KeyList"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="functionKeyList"
+                android:text="一覧"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/KeyDelete"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="functionKeyDelete"
+                android:text="削除"
+                android:textSize="15sp"/>
+
+
+
+
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
